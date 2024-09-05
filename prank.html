@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>You've Been Pranked!</title>
+    <style>
+        /* Style for the flashy messages */
+        .flashy-message {
+            position: absolute;
+            font-size: 20px;
+            font-weight: bold;
+            color: red;
+            background-color: yellow;
+            padding: 10px;
+            border: 2px solid black;
+            animation: flash 0.5s infinite alternate;
+            z-index: 1000;
+        }
+
+        @keyframes flash {
+            0% { opacity: 1; }
+            100% { opacity: 0; }
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center;">Just a Normal Page...</h1>
+    <!-- This line links to the JavaScript file -->
+    <script src="prank.js"></script>
+</body>
+</html>
